@@ -33,7 +33,8 @@ header {
   gap: 10px;
 
   h1 {
-    font-family: $defaultFont;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
     margin: 0;
     font-size: 1.8rem;
     font-weight: 600;
@@ -85,7 +86,7 @@ padding-right: $gutter;
 }
 
 h2 {
-  padding-left: $gutter;
+  padding: $gutter;
 }
 
 .cardsWrapper {
@@ -103,6 +104,7 @@ h2 {
       padding: 1rem $gutter;
     }
     h3 {
+      text-align: center;
       color: $secondaryColor;
       background-color: $accentColor;
       font-size: 1.5rem;
@@ -165,6 +167,7 @@ footer {
       display: flex;
       gap: 1.8rem;
       align-items: center;
+      color: $fontColor;
       a {
         display: block;
         font-size: 2rem;
