@@ -23,21 +23,55 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Inline CSS for nav toggle -->
+    <style>
+      #mainNav {
+        display: none;
+      }
+
+      #mainNav.open {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      #ham {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      @media (min-width: 768px) {
+        #ham {
+          display: none;
+        }
+
+        #mainNav {
+          display: flex !important;
+          flex-direction: row;
+          gap: 2rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <div id="headerWrapper">
       <header>
         <a href="index.html">
-          <img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+          <img src="images/logo1x.png" alt="logo" width="50" height="50"
+            srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
         </a>
         <h1>American Fork Diner</h1>
       </header>
     </div>
 
     <div id="navWrapper">
-      <button id="ham">&#9776;</button>
-      <nav>
+      <button id="ham" aria-label="Menu Toggle">&#9776;</button>
+      <nav id="mainNav">
         <a class="active" href="#">Menu</a>
         <a href="#">Catering</a>
         <a href="#">Reservations</a>
