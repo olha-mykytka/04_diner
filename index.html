@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Sample start file" />
-    <meta name="author" content="Olha Mykytka" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/styles.min.css" />
-    <link href="https://css.gg/css" rel="stylesheet" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <meta name="description" content="Start file" />
+    <meta name="author" content="Olha Mykytka" />
 
     <title>American Fork Diner</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
+
   <body>
     <div id="headerWrapper">
       <header>
-        <a href="index.html"><img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+        <a href="index.html">
+          <img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+        </a>
         <h1>American Fork Diner</h1>
       </header>
     </div>
+
     <div id="navWrapper">
       <button id="ham">&#9776;</button>
       <nav>
@@ -33,98 +45,76 @@
         <a href="#">Reservations</a>
       </nav>
     </div>
+
     <div id="mainWrapper">
       <main>
         <h2>Explore Breakfast Menu</h2>
         <div class="cardsWrapper">
           <section>
             <h3>Biscuits And Gravy</h3>
-            <img
-              src="images/biscuits.webp"
-              alt="Food"
-              width="300"
-              height="175"
-            />
+            <img src="images/biscuits.webp" alt="Food" width="300" height="175" />
             <p>two buttermilk biscuits smothered in country gravy served with hashbrowns</p>
             <a href="#">Order Now</a>
           </section>
           <section>
             <h3>French Toast</h3>
-            <img
-            src="images/french.webp"
-              alt="Food"
-              width="300"
-              height="175"
-            />
+            <img src="images/french.webp" alt="Food" width="300" height="175" />
             <p>two thick wedges of french toast topped with powdered sugar and maple syrup</p>
             <a href="#">Order Now</a>
           </section>
           <section>
             <h3>Breakfast Burrito</h3>
-            <img
-            src="images/breakfast_burrito.webp"
-              alt="Food"
-              width="300"
-              height="175"
-            />
+            <img src="images/breakfast_burrito.webp" alt="Food" width="300" height="175" />
             <p>flour tortilla filled with scrambled eggs, sausage, bacon or ham, salsa, and cheese</p>
             <a href="#">Order Now</a>
           </section>
           <section>
             <h3>Oatmeal</h3>
-            <img
-            src="images/oatmeal.webp"
-            alt="Food"
-              width="300"
-              height="175"
-            />
-            <p>toast,your choice of milk, brown sugar or honey, and fresh seasonal fruits</p>
+            <img src="images/oatmeal.webp" alt="Food" width="300" height="175" />
+            <p>toast, your choice of milk, brown sugar or honey, and fresh seasonal fruits</p>
             <a href="#">Order Now</a>
           </section>
           <section>
             <h3>Country Breakfast</h3>
-            <img
-            src="images/fried_steak.webp"
-            alt="Food"
-              width="300"
-              height="175"
-            />
+            <img src="images/fried_steak.webp" alt="Food" width="300" height="175" />
             <p>country fried steak, and hashbrowns served with a buttermilk biscuit and country gravy</p>
             <a href="#">Order Now</a>
           </section>
         </div>
       </main>
     </div>
+
     <div id="footerWrapper">
       <footer>
         <div>
           <section class="contact">
-            <p><gg-icon class="gg-user"></gg-icon><span>John Doe</span></p>
-            <p><gg-icon class="gg-home"></gg-icon><span>Diner, LLC</span></p>
-            <p><a href="mailto:diner@gmail.com"><gg-icon class="gg-mail"></gg-icon><span>diner@gmail.com</span></a></p>
-            <p><a href="gmail.com"><gg-icon class="gg-globe-alt"></gg-icon>gmail.com</a></p>
-            <p><a href="tel:8017660553"><gg-icon class="gg-phone"></gg-icon>801.766.0553</a></p>
+            <p><ion-icon name="person-outline"></ion-icon> <span>John Doe</span></p>
+            <p><ion-icon name="home-outline"></ion-icon> <span>Diner, LLC</span></p>
+            <p><a href="mailto:diner@gmail.com"><ion-icon name="mail-outline"></ion-icon> diner@gmail.com</a></p>
+            <p><a href="http://gmail.com"><ion-icon name="globe-outline"></ion-icon> gmail.com</a></p>
+            <p><a href="tel:8017660553"><ion-icon name="call-outline"></ion-icon> 801.766.0553</a></p>
           </section>
+
           <section class="social">
-            <a href="#"><gg-icon class="gg-facebook"></gg-icon></a>
-            <a href="#"><gg-icon class="gg-twitter"></gg-icon></a>
-            <a href="#"><gg-icon class="gg-instagram"></gg-icon></a>
-            <a href="#"><gg-icon class="gg-unsplash"></gg-icon></a>
-            <a href="#"><gg-icon class="gg-youtube"></igg-icon></a>
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
           </section>
+
           <section class="location">
-            <address>1220 E Main St <br> Lehi, UT 84043 <br> 801-766-0553</address>
+            <address>
+              1220 E Main St <br>
+              Lehi, UT 84043 <br>
+              801-766-0553
+            </address>
           </section>
         </div>
-
-
-
 
         <p class="legal">© <span id="year">2025</span> | Olha Mykytka</p>
       </footer>
     </div>
+
     <script src="js/scripts.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
